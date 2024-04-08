@@ -37,10 +37,10 @@ check-dependencies:
 
 check-python:
 	@echo "$(YELLOW)Checking Python installation...$(RESET)"
-	@if command -v python3 > /dev/null; then \
-		echo "$(BLUE)$(shell python3 --version) is already installed.$(RESET)"; \
+	@if command -v python > /dev/null; then \
+		echo "$(BLUE)$(shell python --version) is already installed.$(RESET)"; \
 	else \
-		echo "$(RED)Python 3 is not installed. Please install Python 3 to continue.$(RESET)"; \
+		echo "$(RED)Python is not installed. Please install Python to continue.$(RESET)"; \
 		exit 1; \
 	fi
 
